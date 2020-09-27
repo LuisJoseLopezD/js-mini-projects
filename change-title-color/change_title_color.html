@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+
+<style>
+    
+    body {
+        padding: 50px;
+        margin-top: 30px;      
+    }
+    
+    </style>
+
+<script>
+    
+    function changeColor(){
+        var a = document.getElementsByTagName("h1");
+        a[0].style.color = "green";
+
+    }
+    
+    function changeColor2(){
+        var a = document.getElementsByTagName("h1");
+        a[0].style.color = "black";
+
+    }
+    
+    function changeColor3(){
+        var a = document.getElementsByTagName("h1");
+        a[0].style.color = "blue";
+
+    }
+    
+    </script>
+
+<body>
+
+<h1 style="color: blue;">Esto es un titulo</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum repellat deserunt repellendus perspiciatis ipsum accusamus cupiditate, illum. Dolore nihil quae tempore, placeat reiciendis, adipisci cumque voluptates, sequi voluptate sunt laboriosam?</p>
+
+
+ <button onclick="changeColor()">Title Color Green</button> 
+ 
+  <button onclick="changeColor2()">Title Color Black</button> 
+  
+  <button onclick="changeColor3()">Title Color Blue</button>
+
+
+</body>
+</html>

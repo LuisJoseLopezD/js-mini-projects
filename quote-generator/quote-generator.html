@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    
+    var quotes = [
+        '"hi, i am a dog". Author: Bob',
+        '"hi, i am a cat". Author: Marie',
+        '"hi, i am a duck". Author: Donald'
+    ];
+
+    var n = 0;
+    function nextQuote(){
+    	var getQuote = document.getElementById("quote");
+    	n++;
+    	if (n<3){
+    	getQuote.innerHTML = quotes[n];
+    		}else {
+    			n = 0;
+    		getQuote.innerHTML = quotes[n];	
+    		}
+    }
+
+    </script>
+   
+    <style type="text/css">
+    
+    .container {
+        border: 4px solid black;
+        border-radius: 10px;
+        max-width: 250px;
+        padding: 20px;
+        border: 2px solid #ccc;
+        text-align: center;
+    }
+    
+    </style>
+    
+    <div class="container">
+        
+        <p id="quote">"hi, i am a dog". Author: Bob</p>
+        
+        <button onclick="nextQuote()"> Next Quote </button>
+    
+    </div>
+</body>
+
+</html>

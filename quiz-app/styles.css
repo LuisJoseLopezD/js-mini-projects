@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.test {
+    border: black 1px solid;
+    padding: 30px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+
+<body>
+
+
+	<script type="text/javascript">
+
+
+		// AGREGAR TEXTO
+
+		var n = 0;
+		function asdasdas(){
+		   var getId = document.getElementById('newRow'); //obtengo el id donde quiero trabajar
+		   var txt = document.createElement('src'); 	  //creo la etiqueta html
+		   getId.appendChild(txt);
+		   n++;
+		   if (n<6){						  	//y ordeno que getId sea papa de Txt	
+		   txt.innerHTML = "Pomodoro";
+		   }					  						//a txt le agrego texto con innerHTML
+		}
+
+		// AGREGAR IMAGEN
+
+		function add(){
+			var getId = document.getElementById("newRow")
+			var newDiv = document.createElement('span'); 
+			getId.appendChild(newDiv)
+			n++;
+		   if (n<6){
+			newDiv.innerHTML='<img src="./fruta.png" />';	
+			}else{
+				add2();
+			}	  					
+		}
+
+
+	</script>
+
+
+
+    <style type="text/css">
+    body {
+           margin: 0 auto;
+   			width: 500px;
+   			margin-top: 60px;
+    }
+
+    table.blueTable {
+        border: 1px solid #1C6EA4;
+        background-color: #EEEEEE;
+        width: 400px;
+        text-align: left;
+        border-collapse: collapse;
+    }
+
+    table.blueTable td,
+    table.blueTable th {
+        border: 1px solid #AAAAAA;
+        padding: 3px 2px;
+    }
+
+    table.blueTable tbody td {
+        font-size: 16px;
+    }
+
+    table.blueTable tr:nth-child(even) {
+        background: #D0E4F5;
+    }
+
+    table.blueTable thead {
+        background: #1C6EA4;
+        background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+        background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+        background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+        border-bottom: 2px solid #444444;
+    }
+
+    table.blueTable thead th {
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF;
+        border-left: 2px solid #D0E4F5;
+    }
+
+    table.blueTable thead th:first-child {
+        border-left: none;
+    }
+
+    table.blueTable tfoot {
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF;
+        background: #D0E4F5;
+        background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+        background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+        background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+        border-top: 2px solid #444444;
+    }
+
+    table.blueTable tfoot td {
+        font-size: 16px;
+    }
+
+    table.blueTable tfoot .links {
+        text-align: right;
+    }
+
+    table.blueTable tfoot .links a {
+        display: inline-block;
+        background: #1C6EA4;
+        color: #FFFFFF;
+        padding: 2px 8px;
+        border-radius: 5px;
+    }
+
+    button {
+    	padding: 5px;
+    	text-align: center;
+    	margin: -5px;
+    	width: 170px;
+    	max-width: auto;
+    }
+
+    </style>
+    <table class="blueTable">
+        <thead>
+            <tr>
+                <th>SESION</th>
+                <th>TASK</th>
+                <th>POMODOROS</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+               
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>03/04/2020 =></td>
+                <td>Programming</td>
+                <td><div id="newRow"></div></td>
+            </tr>
+            <tr>
+                <td>04/04/2020 =></td>
+                <td>Programming</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>05/04/2020 =></td>
+                <td>Programming</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><div><button>+date</button></div></td>
+                <td><div><button>+task</button></div></td>
+                <td><div><button onclick="add()">+pomodoro</button></div></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

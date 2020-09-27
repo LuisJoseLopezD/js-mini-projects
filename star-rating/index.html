@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/42d5618539.js" crossorigin="anonymous"></script>
+    
+    <!--styles css-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--bootstrap cdn-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>frameworks</title>
+</head>
+<body>
+
+    <h3 class="text-center mt-3">Who's the best framework?</h3>
+    <div class="container mt-5">
+
+        <div class="form-group">
+            <select  id="framework-select" class="form-control custom-select">
+                <option value="0" disable selected>Select Framework</option>
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+                <option value="vue">Vue</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1-5" disabled>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>frameworks</th>
+                    <th>rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="react">
+                    <td>React</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="angular">
+                    <td>Angular</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="vue">
+                    <td>Vue</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+<script src="script.js"></script>    
+</body>
+</html>
